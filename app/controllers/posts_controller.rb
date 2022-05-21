@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to root_path, notice: "Your post have been saved"
     else
-      flash.now[:notice] = "Please add some text"
+      flash.now[:alert] = "Please add some text"
       render :new, status: :unprocessable_entity
     end 
   end

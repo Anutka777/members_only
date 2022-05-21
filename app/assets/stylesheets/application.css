@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-color: #EFCB68;
+   color: #160c28;
+   font-family: 'Prompt', sans-serif;
+   line-height: 1.5;
+   overflow-x: hidden;
+  }
+
+  .wrapper {
+    max-width: 90vw;
+    margin: 3em auto;
+    animation-name: appear;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+  }
+  
+  .alert,
+  .notice {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #E22834;
+  text-align: center;
+ }
+
+ .notice {
+   background-color: #23CE6B;
+ }
+
+ .username {
+   color: #B40901;
+ }
+
+ a {
+   background-color: transparent;
+   text-decoration: none;
+   color: #EFCB68;
+ }
+
+ @keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,24 +1,17 @@
 <h1>Posts</h1>
+<%= link_to 'Create a post', new_post_path, class: 'new-post-btn' %>
 
-<% @posts.all.each do |post| %>
-  <ul>
-    <li>
-      <%= post.body %> 
-      posted by 
+<ul> 
+  <% @posts.all.each do |post| %>
+    <li>posted by: 
       <% if user_signed_in? %>
-        <%= post.user.username %>
+        <span class="username"><%= post.user.username %></span>
       <% else %>
-        anonymous
+        <span class="username">anonymous</span>
       <% end %>
+      <br>
+      <%= post.body %>
     </li>
-  </ul>
-<% end %>
+  <% end %>
+</ul>
 
-<br>
-  <%= link_to 'Create a post', new_post_path %>
-<br>
-<br>
-
-<%= link_to 'Register', new_user_registration_path %><br>
-<%= link_to 'Login', user_session_path %><br>
-<%= link_to 'Logout', destroy_user_session_path, data: { turbo_method: :delete } %>
