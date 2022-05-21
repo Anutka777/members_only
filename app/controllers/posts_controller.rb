@@ -13,8 +13,9 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
 
     if @post.save
-      redirect_to root_path, notice: "Your post have been saved.", data: {  }
+      redirect_to root_path, notice: "Your post have been saved"
     else
+      flash.now[:notice] = "Please add some text"
       render :new, status: :unprocessable_entity
     end 
   end
