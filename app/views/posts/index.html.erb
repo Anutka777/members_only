@@ -2,7 +2,15 @@
 
 <% @posts.all.each do |post| %>
   <ul>
-    <li><%= post.body %> posted by <%= post.user.username %></li>
+    <li>
+      <%= post.body %> 
+      posted by 
+      <% if user_signed_in? %>
+        <%= post.user.username %>
+      <% else %>
+        anonymous
+      <% end %>
+    </li>
   </ul>
 <% end %>
 
