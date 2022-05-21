@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to root, notice: "Your post have been saved."
     else
-      # render :new, status :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end 
   end
 
