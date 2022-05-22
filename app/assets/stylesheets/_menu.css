@@ -1,5 +1,5 @@
 header {
-  padding: 1em;
+  padding: 1rem;
   position: fixed;
   top: 0;
   display: flex;
@@ -7,4 +7,14 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: #B40901;
+}
+
+.left,
+.right {
+  display: flex; 
+  background-color: #B40901; 
+}
+
+a {
+  margin: 0 1em;
 }
