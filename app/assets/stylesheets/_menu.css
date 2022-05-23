@@ -6,13 +6,15 @@ header {
   justify-content: space-between;
   width: 100%;
   z-index: 1000;
-  background-color: #B40901;
+  background-color: var(--second);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius:  .5rem;
 }
 
 .left,
 .right {
   display: flex; 
-  background-color: #B40901; 
+  background-color: var(--second); 
 }
 
 a {

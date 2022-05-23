@@ -18,8 +18,8 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   background-color: #EFCB68;
-   color: #160c28;
+   background-color: var(--background);
+   color: var(--main);
    font-family: 'Prompt', sans-serif;
    font-size: 16px;
    line-height: 1.5;
@@ -28,7 +28,7 @@
 
   .wrapper {
     max-width: 90vw;
-    margin: 3rem auto;
+    margin: 3.6rem auto;
     animation-name: appear;
     animation-duration: 1.3s;
     animation-iteration-count: 1;
@@ -39,22 +39,30 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: #B40901;
+  background-color: var(--second);
   text-align: center;
+  color:var(--background);
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
  }
 
  .notice {
+   color: var(--main);
    background-color: #23CE6B;
  }
 
  .username {
-   color: #B40901;
+   color: var(--second);
  }
 
  a {
    background-color: transparent;
    text-decoration: none;
-   color: #EFCB68;
+   color: var(--background);
+ }
+
+ a:hover {
+   text-decoration: underline;
  }
 
  @keyframes appear {
@@ -65,4 +73,9 @@
   to {
     opacity: 1;
   }
+}
+
+input,
+a {
+  border-radius: .5rem;
 }

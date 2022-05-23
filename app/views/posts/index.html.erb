@@ -3,14 +3,18 @@
 
 <ul> 
   <% @posts.all.each do |post| %>
-    <li>posted by: 
-      <% if user_signed_in? %>
-        <span class="username"><%= post.user.username %></span>
-      <% else %>
-        <span class="username">anonymous</span>
-      <% end %>
-      <br>
-      <%= post.body %>
+    <li>
+      <div class="post-head">
+        posted by:
+        <% if user_signed_in? %>
+          <span class="username"><%= post.user.username %></span>
+        <% else %>
+          <span class="username">anonymous</span>
+        <% end %>
+      </div>
+      <div class="post-body">
+        <%= post.body %>
+      </div>
     </li>
   <% end %>
 </ul>

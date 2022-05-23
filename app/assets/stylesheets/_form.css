@@ -59,7 +59,7 @@ input[type="checkbox"] + label::before {
   height: 1em;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #160c28;
+  border: 1px solid var(--main);
   border-radius: .25em;
   margin-right: .5em;
   background-repeat: no-repeat;
@@ -69,34 +69,24 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   background-image: url("../assets/checkmark.png");
-  background-color: #160c28;
+  background-color: var(--main);
 }
 
 input[type="submit"] {
   display: block;
   margin: 1.5rem auto;
   padding: 0.7rem 1.5rem;
-  background-color: #160C28;
-  color: #efcb68;
+  background-color: var(--main);
+  color: var(--background);
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 input[type="submit"]:hover {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  background-color: #B40901;
+  background-color: var(--second);
 }
 
 .field.remember {
   flex-direction: row;
   justify-content: center;
-}
-
-.new-post-btn {
-  padding: 1rem;
-  position: fixed;
-  top: 8rem;
-  right: 5rem;
-  z-index: 1001;
-  display: block;
-  background-color: #160c28;
 }

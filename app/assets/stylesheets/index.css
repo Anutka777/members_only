@@ -2,6 +2,7 @@ li {
   padding: 1rem;
   margin: 1rem auto;
   max-width: 600px;
+  border-radius: .5rem;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -11,15 +12,16 @@ li:hover {
 }
 
 .new-post-btn {
-  padding: 1rem;
+  padding: .6em 1rem;
   position: fixed;
   top: 8rem;
   right: 5rem;
   z-index: 1001;
   display: block;
-  background-color: #160c28;
+  background-color: var(--main);
 }
 
 .new-post-btn:hover {
-  background-color: #B40901;
+  background-color: var(--second);
+  text-decoration: none;
 }
