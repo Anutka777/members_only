@@ -74,3 +74,8 @@ input,
 a {
   border-radius: .5rem;
 }
+
+.error_explanation {
+  color: red;
+  text-align: center;
+}
