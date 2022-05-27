@@ -41,14 +41,9 @@
   bottom: 0;
   background-color: var(--second);
   text-align: center;
-  color:var(--background);
+  color:  var(--background);
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
- }
-
- .notice {
-   color: var(--main);
-   background-color: var(--second);
  }
 
  .username {
