@@ -76,6 +76,7 @@ a {
 }
 
 .error_explanation {
-  color: red;
+  color: var(--error);
   text-align: center;
+  font-size: .9rem;
 }
