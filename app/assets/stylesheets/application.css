@@ -1,41 +1,43 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
 
- * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   background-color: var(--background);
-   color: var(--main);
-   font-family: 'Prompt', sans-serif;
-   font-size: 16px;
-   line-height: 1.5;
-   overflow-x: hidden;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--main);
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
 
-  .wrapper {
-    max-width: 90vw;
-    margin: 3.6rem auto;
-    animation-name: appear;
-    animation-duration: 1.3s;
-    animation-iteration-count: 1;
-  }
+:root {
+  --main: #3d6d79;
+  --background: #e0e2ee;
+  --second: #d69d66;
+  --error: #de1a1a;
+}
+
+/* :root {
+      --main: #160c28;
+      --background: #EFCB68;
+      --second: #B40901;
+} */
+
+.wrapper {
+  max-width: 90vw;
+  margin: 3.6rem auto;
+  animation-name: appear;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+}
   
-  .alert,
-  .notice {
+.alert,
+.notice {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -44,35 +46,34 @@
   color:  var(--background);
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
- }
+}
 
- .username {
-   color: var(--second);
- }
+.username {
+  color: var(--second);
+}
 
- a {
-   background-color: transparent;
-   text-decoration: none;
-   color: var(--background);
- }
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--background);
+}
 
- a:hover {
-   text-decoration: underline;
- }
-
- @keyframes appear {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
 input,
 a {
-  border-radius: .5rem;
+ border-radius: .5rem;
+}
+
+@keyframes appear {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
 }
 
 .error_explanation {
