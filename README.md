@@ -1,6 +1,8 @@
 # members_only!
 Exclusive clubhouse where members can write anonymous posts
 
+![Screenshot](screenshot.png)
+
 Live Demo: https://still-mesa-10152.herokuapp.com/
 
 <hr>
